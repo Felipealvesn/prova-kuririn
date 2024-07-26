@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Istok Web", sans-serif;
+}
+header{
+   padding: 20px;
+   width: 100vw;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+.itens-nav-bar{
+    list-style-type: none;
+    margin-left: 10px;
+}
+.links-nav-bar{
+    text-decoration: none;
+}
+.logo{
+    padding: 15px
+}
+section{
+    background: url("imagens/background-roxo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

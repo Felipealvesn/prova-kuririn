@@ -8,56 +8,54 @@
 </head>
 <body>
 
-    <!-- inicio do header -->
-    <header>
-        <nav class="navigation">
-            <h1 class="logotipo">
-                <img src="imagens/logotipo.png" alt="Logotipo">
-            </h1>
-            <ul>
-                <li class="itens-nav-bar"><a class="links-nav-bar" href="#">Produtos</a></li>
-                <li class="itens-nav-bar"><a class="links-nav-bar" href="#">Documentações</a></li>
-                <li class="itens-nav-bar"><a class="links-nav-bar" href="#">medium E-news</a></li>
-                <li class="itens-nav-bar"><a class="links-nav-bar" href="#">videos</a></li>
-                <li class="itens-nav-bar"><a class="links-nav-bar" href="#">downloads</a></li>
-            </ul>
-            <div><img src="imagens/lupinha.png" alt="pesquisar"></div>
-        </nav>
-    </header>
-
-    <!-- inicio do main -->
-        <main>
-            <section>
-                <div>
-                    <h2 class="h2-section">Lorem ipsum dolor sit amet</h2>
-                    <div>
-                        <div class="lorem-section">Lorem ipsum dolor sit</div>
-                        <div class="lorem-section">Lorem ipsum dolor sit</div>
-                        <div class="lorem-section">Lorem ipsum dolor sit amet lorem ipsum</div>
-                        <div class="lorem-section">Lorem ipsum dolor sit amet lorem ipsum</div>
-                    </div>
-                    <div>
-                        <div class="btn-itens-box">
-                            <button>
-                                <a href="#"><img src="imagens/+.png" alt="mais"></a>
-                            </button> 
-                            <p>Ver todos os itens</p>
-                        </div>
-                        <div class="btn-duvidas-box">
-                             <button>
-                                <a href="#">
-                                    <img src="imagens/duvidas.png" alt="duvidas">
-                                    <span class="spans-section">portal de dúvidas</span>
-                                </a>
-                            </button>
-                        </div>
-                    </div>
+    <div class="background">
+        <header>
+            <nav class="navigation">
+                <div class="logo">
+                    <img src="imagens/logotipo.png" alt="logo">
                 </div>
-            
-            </section>
-        </main>
+                <ul>
+                    <li><a href="#">produtos</a></li>
+                    <li><a href="#">documentações</a></li>
+                    <li><a href="#">medium e-news</a></li>
+                    <li><a href="#">videos</a></li>
+                    <li><a href="#">downloads</a></li>
+                </ul>
+                <div class="search">
+                    <img src="imagens/lupinha.png" alt="pesquisar">
+                </div>
+            </nav>
+        </header>
+        
+        <section class="section-top">
+            <div class="h1-section-box">
+                <h1 id="h1-section">
+                    Lorem ipsum dolor <br> sit amet 
+                </h1>
+            </div>
 
-        <!-- inicio do Footer -->
+            <div class="lorens-section">
+                <div class="loren-section-boxs lorens-section-cima"><p>Lorem ipsum dolor sit</p></div>
+                <div class="loren-section-boxs lorens-section-cima"><p>Lorem ipsum dolor sit</p></div>
+                <div class="loren-section-boxs lorens-section-baixo"><p>Lorem ipsum dolor sit amet lorem ipsum</p></div>
+                <div class="loren-section-boxs lorens-section-baixo"><p>Lorem ipsum dolor sit amet lorem ipsum</p></div>
+            </div>
+            <div class="btns-section">
+                <div class="itens-btn">
+                    <a href="#"><img src="imagens/+.png" alt="itens"></a>
+                    <span>Ver todos os itens</span>
+                </div>
+                
+                <div class="duvidas-btn">
+                    <button>
+                        <img src="imagens/duvidas.png" alt="duvidas">
+                        <span>Portal de duvidas</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

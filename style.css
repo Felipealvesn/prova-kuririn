@@ -3,35 +3,134 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
     font-family: "Istok Web", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.background{
+    background: url(imagens/background-roxo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 790px;
 }
 header{
-   padding: 20px;
-   width: 100vw;
+    padding: 20px 40px;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(1deg, transparent 20%, rgba(0, 0, 0, 0.776));
 }
 .navigation{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-top: 5px;
+    margin-left: 25px;
 }
 ul{
     display: flex;
-    justify-content: space-around;
-    margin-left: 30px;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-top: 10px;
 }
-.itens-nav-bar{
+li{
+    cursor: pointer;
     list-style-type: none;
-    margin-left: 10px;
 }
-.links-nav-bar{
+a{
+    font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
+    color: white;
+    text-transform: uppercase;
 }
-.logo{
-    padding: 15px
+.search{
+    cursor: pointer;
+    border-radius: 999px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-section{
-    background: url("imagens/background-roxo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.section-top{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    color: white;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+}
+.h1-section-box{
+    width: 70%;
+}
+#h1-section{
+    width: 100%;
+    font-size: 60px;
+    line-height: 60px;
+}
+.lorens-section{
+    width: 90%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 300px 300px;
+}
+.loren-section-boxs{
+    background-color: black;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.lorens-section-baixo{
+    text-align: start;
+}
+.lorens-section-cima{
+    padding: 30px ;
+}
+
+.btns-section{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.itens-btn{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.itens-btn > span{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.itens-btn > a > img{
+    margin-top: 5px; 
+    padding: 10px;
+    border-radius: 999px;
+    background-color: black;
+    cursor: pointer;
+}
+.duvidas-btn > button{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.duvidas-btn > button > span {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
 }

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root{
+    --cor-preta: #121212;
+    --cor-branca: #e5e5e5;
+    --cor-cinza-claro: #f1f1f1;
+    --cor-ciza-secundário: #b2b2b2;
+    --cor-azul: #706ef4;
+    --cor-azul-escura: #4c4ca8;
+}
+
 html{
     height: 100vh;
     width: 100vw;
@@ -20,6 +29,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 860px;
+    background-position: right center;
+    width: 100vw;
 }
 header{
     padding: 20px 40px;
@@ -42,6 +53,33 @@ ul{
     width: 60%;
     margin-top: 10px;
 }
+.sub-menu ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10 0px;
+    width: 20%;
+    left: 37%;
+    position: absolute;
+    border-radius: 20px;
+    background-color: var(--cor-azul);
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.489);
+}
+.sub-menu > ul > li{
+    padding: 10px;
+    text-align: center;
+}
+.sub-menu > ul > li:hover{
+    background-color: var(--cor-azul-escura);
+}
+.sub-menu > ul > li > a{
+   font-size: 16px;
+}
+.sub-menu{
+    display: none;
+}
+#lista-down > img:hover .sub-menu{
+    display: block;
+}
 li{
     cursor: pointer;
     list-style-type: none;
@@ -50,23 +88,27 @@ a{
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: var(--cor-branca);
     text-transform: uppercase;
+}
+button{
+    cursor: pointer;
 }
 .search{
     cursor: pointer;
     border-radius: 999px;
     padding: 10px;
-    background-color: white;
+    background-color: var(--cor-branca);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* ------- fim do Header -------- */
 .section-top{
     width: 80%;
     height: 65%;
     display: flex;
-    color: white;
+    color: var(--cor-branca);
     margin: auto;
     justify-content: space-evenly;
     align-items: start;
@@ -79,6 +121,7 @@ a{
     width: 100%;
     font-size: 60px;
     line-height: 60px;
+    color: #fff;
 }
 .lorens-section{
     width: 90%;
@@ -87,24 +130,24 @@ a{
     grid-template-columns: 300px 300px;
 }
 .loren-section-boxs{
-    background-color: black;
+    background-color: var(--cor-preta);
     font-size: 20px;
     width: 100%;
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 .lorens-section-baixo{
-    text-align: start;
+    text-align: left;
 }
 .lorens-section-cima{
     padding: 30px ;
 }
-
 .btns-section{
     display: flex;
-    width: 50%;
+    width: 51%;
+    margin: 0;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 }
 .itens-btn{
     width: 50%;
@@ -112,34 +155,35 @@ a{
     align-items: center;
 }
 .itens-btn > span{
-    margin-left: 10px;
+    margin-left: 20px;
     font-weight: bold;
     font-size: 20px;
 }
 .itens-btn > a > img{
-    margin-top: 5px; 
     padding: 10px;
     border-radius: 999px;
-    background-color: black;
+    background-color: var(--cor-preta);
     cursor: pointer;
 }
 .duvidas-btn > button{
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: var(--cor-preta);
     border-radius: 20px;
     padding: 10px 20px;
-    border: 1px solid black;
-    cursor: pointer;
+    border: 1px solid var(--cor-preta);
 }
 .duvidas-btn > button > span {
     margin-left: 20px;
     font-weight: bold;
     font-size: 20px;
-    color: white;
+    color: var(--cor-branca);
 }
+
+/* -------- Fim do section --------- */
+
 .article-refri{
-    background-color: #f1f1f1;
+    background-color:  var(--cor-cinza-claro);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -162,7 +206,6 @@ a{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 800px;
 }
 .section-list{
     display: flex;
@@ -182,7 +225,7 @@ a{
 }
 .section-list-titles > h3{
     font-size: 18px;
-    color: #b2b2b2;
+    color: var(--cor-ciza-secundário);
     font-weight: 400;
 }
 .section-list-left{
@@ -212,21 +255,21 @@ a{
     border-radius: 100px;
     font-weight: 800;
     text-align: center;
-    color: white;
-    background-color: #706ef4;
+    color: var(--cor-branca);
+    background-color: var(--cor-azul);
     cursor: pointer;
-    border: 1px solid #706ef4;
+    border: 1px solid var(--cor-azul);
 }
 #anos-ant-btn{
     margin-left: 20px;
     text-align: center;
     padding: 10px 30px;
-    color: #706ef4;
+    color: var(--cor-azul);
     font-weight: 800;
     cursor: pointer;
-    border: 1px solid #706ef4;
+    border: 1px solid var(--cor-azul);
     border-radius: 100px;
-    background-color: white;
+    background-color: var(--cor-branca);
 }
 .ul-section-box{
     display: flex;
@@ -239,7 +282,7 @@ a{
     justify-content: start;
 }
 .ul-section > li{
-    border-bottom: 3px solid #706ef4;
+    border-bottom: 3px solid var(--cor-azul);
     width: 90%;
     display: flex;
     margin-top: 50px;
@@ -249,15 +292,174 @@ a{
 .ul-section > li > span{
     margin-left: 15px;
 }
-.itens-btn{
+.itens-btn {
     margin-top: 50px;
 }
+/*---------- fim da section lista -----------*/
+.section-videos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
 .title-videos{
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0px 0px 0px;
     margin-top: 100px;
 }
 .title-videos > h2{
     font-size: 60px;
+    margin-bottom: -40px;
     font-weight: bold;
     text-align: center;
+}
+.container-videos{
+    margin: auto;
+    width: 85%;
+}
+.img-grande-videos{
+    width: 88.3%;
+}
+.container-v-cima{
+    display: flex;
+    justify-content: space-between;
+}
+.container-v-baixo{
+    display: flex;
+    justify-content: space-between;
+}
+.section-videos-cima{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-videos-baixo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section-videos-cima > p{
+    padding: 15px;
+    font-size: 20px;
+    background-color: var(--cor-azul);
+    border-radius: 0px 0px 5px 5px;
+    color: var(--cor-branca);
+    margin-top: -8px;
+    width: 88.3%;
+}
+.section-videos-baixo > p{
+    padding: 15px;
+    font-size: 20px;
+    width: 88.3%;
+    background-color: var(--cor-azul);
+    border-radius: 0px 0px 10px 10px;
+    color: var(--cor-branca);
+    margin-top: -8px;
+}
+.play-video{
+    position: relative;
+    cursor: pointer;
+    top: 45%;
+    left: 0%;
+}
+.container-videos > .itens-btn{
+    margin-top: 50px;
+    margin-left: 35px;
+}
+/*------ FIM DA SECTION VIDEOS -------- */
+
+/*------ INICIO FOOTER -------- */
+footer{
+    background-color: var(--cor-preta);
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 20px 40px;
+    color: var(--cor-branca);
+}
+.foot-top{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.mapa-foot > a{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: none;
+}
+.foot-top h4{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+.foot-top .logo{
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.foot-top > div{
+    display: flex;
+    flex-direction: column;
+}
+.onde-estamos{
+    justify-content: space-around;
+}
+.onde-estamos div{
+    padding-top: 24px;
+}
+#title-onde{
+    margin-top: 10px;
+}
+.foot-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 40px 0px 20px 0px;
+}
+.redes-img{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 0;
+}
+.btn-redes button{
+    padding: 14px;
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid var(--cor-azul);
+    text-align: center;
+}
+#p-foot-left{
+    color: var(--cor-azul);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ------- FIM FOOTER ------- */
+
+/*
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px
+*/
+
+/*-------- INICIO MEDIA QUERIES ------- */
+@media(max-width: 1400px) and (min-width: 1200px){
+    .img-grande-videos{
+        width: 88.3%;
+    }
+}
+
+@media(max-width: 1200px) and (min-width: 992px){
+ 
 }

@@ -8,7 +8,10 @@
 </head>
 <body>
 
+    <!-- Inicio background -->
     <div class="background">
+
+        <!-- Inicio do header-->
         <header>
             <nav class="navigation">
                 <div class="logo">
@@ -16,17 +19,27 @@
                 </div>
                 <ul>
                     <li><a href="#">produtos</a></li>
-                    <li><a href="#">documentações</a></li>
+                    <li id="lista-down"><a href="#">documentações <img class="active-menu" onclick="active()" src="svg.icons/menu-1336.svg" alt="icon"></a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">Realeses Notes</a></li>
+                            <li><a href="#">Manuais</a></li>
+                            <li><a href="#">Notas de Atendimento</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    </li>
                     <li><a href="#">medium e-news</a></li>
                     <li><a href="#">videos</a></li>
                     <li><a href="#">downloads</a></li>
                 </ul>
                 <div class="search">
-                    <img src="imagens/lupinha.png" alt="pesquisar">
+                    <img src="imagens/lupa.png" alt="pesquisar">
                 </div>
             </nav>
         </header>
         
+        <!-- Inicio da section com background -->
         <section class="section-top">
             <div class="h1-section-box">
                 <h1 id="h1-section">
@@ -55,8 +68,12 @@
             </div>
         </section>
     </div>
+    <!-- Fim do background-->
 
+    <!-- Inicio do main -->
     <main>
+
+        <!-- Inicio do article -->
         <article class="article-refri">
            <div class="article-left">
             <p>Lorem ipsum dolor, sit amet consectetur. <strong>Mauris</strong> <strong>sapiem</strong> diam magna malesuada laoreet <strong>commodo</strong> <strong>euismod</strong> sed.</p>
@@ -71,7 +88,9 @@
                 </div>
             </div>
         </article>
-        
+        <!-- Fim do article -->
+
+        <!-- Inicio da section de baixo -->
         <section class="section-bottom">
             <div class="section-list-titles">
                 <h2>Lorem ipsum</h2>
@@ -125,36 +144,105 @@
                    </div>
                 </div>
             </section>  
+            <!-- Fim da section de listas -->
 
+            <!-- Inicio da section de videos -->
             <section class="section-videos">
                 <div class="title-videos"> 
                     <h2>Vídeos</h2>
                 </div>
                 <div class="container-videos">
-                    <div class="section-videos-cima">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                        <button id="play-btn"></button>
-                    </div> 
-                    <div class="section-videos-cima">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                        <button id="play-btn"></button>
+                    <div class="container-v-cima">
+                        <div class="section-videos-cima">
+                            <img class="play-video" src="imagens/play-video.png" alt="play">
+                            <img class="img-grande-videos" src="imagens/homem-videos.png" alt="foto-homem">
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="section-videos-cima">
+                            <img class="play-video" src="imagens/play-video.png" alt="play">
+                            <img class="img-grande-videos" src="imagens/mulher-videos.png" alt="foto-mulher">
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
                     </div>
-                    <div class="section-videos-cima">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                        <button id="play-btn"></button>
-                    </div>
-                    <div class="section-videos-cima">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                        <button id="play-btn"></button>
-                    </div>
+
+                  <div class="container-v-baixo">
+                      <div class="section-videos-baixo">
+                        <img class="play-video" src="imagens/play-video.png" alt="play">
+                          <img class="img-grande-videos" src="imagens/docpay-videos.png" alt="foto-homem">
+                          <p>Lorem ipsum dolor sit amet consectetur</p>
+                      </div>
+                      <div class="section-videos-baixo">
+                          <img class="play-video" src="imagens/play-video.png" alt="play">
+                          <img class="img-grande-videos" src="imagens/note-video.png" alt="notebook">
+                          <p>Lorem ipsum dolor sit amet consectetur</p>
+                      </div>
+                  </div>
+                  <div class="itens-btn">
+                    <a href="#"><img src="imagens/+.png" alt="itens"></a>
+                    <span>Ver todos os itens</span>
+                 </div>
+                 <!-- Fim da section de videos -->
+
                 </div>
             </section>  
         </section>
+        <!-- Fim da section de baixo-->
     </main>
+    <!-- Fim do main -->
+
+    <!--Inicio do footer-->
+    <footer>
+        <div class="foot-top">
+            <div class="logo">
+                <img src="imagens/logotipo.png" alt="logo">
+            </div>
+            <div class="mapa-foot">
+                <h4>Mapa do site</h4>
+                <a href="#"><p>Home</p></a>
+                <a href="#"><p>Produtos</p></a>
+                <a href="#"><p>Notificações</p></a>
+                <a href="#"><p>Medium E-news</p></a>
+                <a href="#"><p>Videos</p></a>
+                <a href="#"><p>Download</p></a>
+                <a href="#"><p>Portal de Atendimento</p></a>
+                <a href="#"><p>Nossa Academia</p></a>
+            </div>
+            <div class="onde-estamos">
+                <h4 id="title-onde">Onde estamos</h4>
+                <div>
+                    <h5>Xique Xique - BA</h5>
+                    <p>Rua Lorem ipsum, 323 e 204 - 1° andar <br> Vila Belmiro | CEP 123456-00</p>   
+                </div>
+                <div>
+                    <h5>Pindamonhangaba - SP</h5>
+                    <p>Avenida Neymar, 212 - 11° andar <br> Setor Norte | CEP 123456-00</p>
+                </div>
+                <div class="container-redes-sociais">
+                    <div class="redes-img">
+                        <a href="#"><img src="imagens/logo-linkedin.png" alt="linkedin"></a>
+                        <a href="#"><img src="imagens/logo-face.png" alt="facebook"></a>
+                        <a href="#"><img src="imagens/logo-insta.png" alt="instagram"></a>
+                        <a href="#"><img src="imagens/logo-YT.png" alt="youtube"></a>
+                        <a href="#"><img src="imagens/logo-twitter.png" alt="twitter"></a>
+                    </div>
+    
+                    <div class="btn-redes">
+                        <button>Visitar o Grupo Medium</button>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="foot-bottom">
+            <div>
+                <p id="p-foot-left">Politica de privacidade | Politica de cookies</p>
+            </div>
+            <div>
+                <p>&copy; MediumConsulting 2022 | Todos os direitos reservados |<img src="imagens/logo-O2.png" id="logo-o2" alt="logo-O2"> Criação</p>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
